@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="bower_components/aos/dist/aos.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            height: 12vh;
+            background-color: black;
+            justify-content: space-between;
+        }
+
+        .nav1 {
+            background-color: black;
+            height: 6vh;
+
+        }
+
+        .links1 {
+            margin-top: 6px;
+        }
+
+        .links1 img {
+            position: relative;
+            top: 7px;
+
+        }
+
+        .nav1 .links1 a {
+            color: aliceblue;
+            text-decoration: none;
+            margin-left: 200px;
+            font-size: 20px;
+        }
+
+        .nav1 .links1 {
+            text-align: center;
+        }
+
+        .logo img {
+            margin-top: 10px;
+        }
+
+        .links a {
+            color: aliceblue;
+            text-decoration: none;
+            margin-right: 70px;
+            font-size: 20px;
+            transition: all 0.5s;
+            font-weight: 600;
+
+        }
+
+        .links a:hover {
+            color: yellow;
+        }
+
+        .links {
+            margin-top: 40px;
+            margin-right: 100px;
+        }
+
+        .c_img img {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .hero_up {
+            color: rgb(48, 34, 159);
+            font-size: 2rem;
+            text-align: center;
+            background-color: rgb(247, 244, 240);
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+
+        .hero_down {
+            display: flex;
+            background-image: linear-gradient(rgba(232, 221, 235, 0.8), rgba(223, 220, 229, 0.8)), url('1.jpg');
+            gap: 5%;
+            height: 65vh;
+            overflow: hidden;
+        }
+
+        .content p {
+            color: #000;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        .content h2 {
+            font-weight: normal;
+            line-height: 40px;
+            margin-top: 10px;
+        }
+
+        .content {
+            margin-left: 15vw;
+        }
+
+        .cover {
+            margin-right: 15vw;
+            margin-top: 10vh;
+        }
+
+        .cover img {
+            height: 40vh;
+            width: 30vw;
+        }
+
+        .content a {
+            text-decoration: none;
+            border: 1px solid orange;
+            color: aliceblue;
+            background-color: orange;
+            padding: 12px 25px;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .mess {
+            background-image: linear-gradient(rgba(16, 16, 16, 0.5), rgba(14, 14, 15, 0.5)), url('1.jpg');
+            height: 50vh;
+            margin-top: 10px;
+        }
+
+        .mess1 {
+            position: relative;
+            top: 30%;
+            left: 15%;
+        }
+
+        .mess1 h1 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 3.5rem;
+        }
+
+        .mess1 p {
+            color: #fff;
+            width: 50vw;
+            font-size: 1.3rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="LPC-Logos.png" alt="lpc logo" height="90px">
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Courses</a>
+            <a href="#">Admissions</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+    <div class="nav1">
+        <hr>
+        <div class="links1">
+            <a href="#"><img src="open-book.png" height="25px"> Open</a>
+            <a href="#"><img src="save-instagram.png" height="25px"> Scholarships</a>
+            <a href="#"> <img src="handshake.png" height="25px"> Placements</a>
+        </div>
+    </div>
+    <section class="c_img">
+        <img src="1.jpg" alt="">
+    </section>
+    <section class="hero_up">
+        <h1>Welcome to Ludhiana Polytechnic College</h1>
+    </section>
+    <section class="hero_down">
+        <div class="content" >
+            <h2 data-aos="slide-up">Ludhiana Polytechnic college established by Global Educational Society (Regd.) is a privately managed
+                self financed College. It is situated on Ludhiana- Chandigarh Highway.</h2>
+            <br><br>
+            <p data-aos="slide-up">The college campus is well planned with beautifully laid out tree plantation, pathways and flowerbeds
+                besides the well maintained sprawling lawns all around. It has beautiful college building and sports
+                infrastructure like volleyball ground, Badminton Ground and other sports.</p>
+            <br><br>
+            <p data-aos="slide-up">he greenery of the campus is remarkable and special care is taken to preserve it. It is affiliated to
+                Punjab State Board of Technical Education & Industrial Training Chandigarh and recognized by AICTE.</p>
+            <br><br>
+            <a href="#" data-aos="flip-up">Read More</a>
+        </div>
+        <div class="cover">
+            <img src="2.jpg" alt="">
+        </div>
+    </section>
+    <section class="mess" >
+        <div class="mess1" data-aos="flip-up">
+            <h1>Message From Chairman</h1>
+            <p>Our students are bright and Industrious and have been consistently securing PSBTE & IT ranks. Our motto
+                is to develop and transform our society through Quality Education.</p>
+        </div>
+    </section>
+
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
+</html>
